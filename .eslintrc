@@ -1,0 +1,5 @@
+{
+    "extends": "react-app"
+    "extends": “eslint-config-google”
+    "extends": ["eslint:recommended", "plugin:react/recommended"]
+}
