@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import { connect } from 'http2';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import Profiles from '../layout/Profiles';
 import TextFieldGroup from '../common/TextFieldGroup';
+import TextAreaFieldGroup from '../common/TextFieldGroup';
+import InputGroup from '../common/TextFieldGroup';
+import SelectListGroup from '../common/TextFieldGroup';
 
 class CreateProfile extends Component {
 	constructor(props) {
@@ -47,7 +51,7 @@ CreateProfile.propTypes = {
 	profile: PropTypes.object.isRequired,
 	errors: PropTypes.object.isRequired,
 };
-const mapStateToProps = (state = {
+const mapStateToProps = state => ({
 	profile: state.profile,
 	errors: state.errors,
 });

@@ -14,6 +14,7 @@ import Login from './components/auth/Login';
 import Dashboard from './components/dashboard/Dashboard';
 import Register from './components/auth/Register';
 import Profiles from './components/layout/Profiles';
+import CreateProfile from './components/create-profile/CreateProfile';
 import store from './store';
 
 import PrivateRoute from './components/common/PrivateRoute';
@@ -44,7 +45,18 @@ class App extends Component {
 							<Route exact path="/register" component={Register} />
 							<Route exact path="/login" component={Login} />
 							<Switch>
-								<PrivateRoute exact path="/dashboard" component={Dashboard} />
+								<PrivateRoute
+									exact
+									path="/dashboard"
+									component={CreateProfile}
+								/>
+							</Switch>
+							<Switch>
+								<PrivateRoute
+									exact
+									path="/create-profile"
+									component={Dashboard}
+								/>
 							</Switch>
 							<Route exact path="/profiles" component={Profiles} />
 						</div>
