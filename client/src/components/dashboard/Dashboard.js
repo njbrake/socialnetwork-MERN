@@ -8,6 +8,8 @@ import { registerUser } from '../../actions/authActions';
 
 import { getCurrentProfile, deleteAccount } from '../../actions/profileActions';
 import Spinner from '../common/Spinner.js';
+import Experience from './Experience';
+import Education from './Education';
 
 import ProfileActions from './ProfileActions';
 
@@ -33,6 +35,8 @@ class Dashboard extends Component {
 							Welcome <Link to={`/profile/${profile.handle}`}>{user.name}</Link>
 						</p>
 						<ProfileActions />
+						<Experience experience={profile.experience} />
+						<Education education={profile.education} />
 						<div style={{ marginBottom: '60px' }} />
 						<button
 							className="btn btn-danger"
