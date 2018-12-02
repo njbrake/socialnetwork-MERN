@@ -13,7 +13,7 @@ import Footer from './components/layout/Footer';
 import Login from './components/auth/Login';
 import Dashboard from './components/dashboard/Dashboard';
 import Register from './components/auth/Register';
-import Profiles from './components/layout/Profiles';
+
 import CreateProfile from './components/create-profile/CreateProfile';
 import store from './store';
 
@@ -23,6 +23,7 @@ import './App.css';
 import EditProfile from './components/edit-profile/EditProfile';
 import AddExperience from './components/add-credentials/AddExperience';
 import AddEducation from './components/add-credentials/AddEducation';
+import Profiles from './components/profiles/Profiles';
 
 if (localStorage.jwtToken) {
 	setAuthToken(localStorage.jwtToken);
