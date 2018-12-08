@@ -3,6 +3,8 @@ img {
 }
 
 .landing {
+	background: url('./img/showcase.jpg') no-repeat !important;
+
 	position: relative;
 	height: 120vh;
 	margin-top: -24px;
