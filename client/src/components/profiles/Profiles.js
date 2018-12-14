@@ -39,7 +39,6 @@ class Profiles extends Component {
 						</div>
 					</div>
 				</div>
-				<h1> This is the Profiles section </h1>
 			</div>
 		);
 	}
